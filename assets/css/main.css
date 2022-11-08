@@ -3,91 +3,141 @@
     position:  center;
     margin-left: 350px ;
     margin-right: 350px;
-    max-width:auto ;
-    max-height: auto;
+    width: 1090px ;
 }
+
+.header{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.header p {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid red 1px;
+}  
+
 .containercenter {
     display: block;
-    justify-content: center;
     margin-left:30px ;
     margin-right: 30px;
     height: 150px;
     background-color: white;
     border: solid black 1px;
-    text-align: center;
 }
 
 .containerleft {
     display: block;
-    justify-content: center;
-    background-color: red;
+    justify-content: left;
+    background-color: white;
     float: left;
     margin-left:30px ;
     height: 800px;
-    width: 70%;
-    min-width: none;
-    min-height: none;
+    max-width: 800px;
+    border: solid black 1px;
+    
 }
 
 .containerright {
-    display: block;
-    float: right;
-    background-color: aqua;
-    margin-right: 30px;
-    height:800px ;
-    width: 20%;
+    display: inline-block;
+    background-color: white;
+    margin-right: 0%;
+    margin-left: 1%;
+    height: 1111px;
+    max-width: 20%;
+    border: solid black 1px;
 }
-H1 {
+
+.containerright li {
+    list-style: none;
+    border: solid;
+    border-width: 0 0px 2px 0px;
+}
+
+.pruebaba {
+    margin-block: auto;
+}
+
+/*aqui comienza el contenedor central hecho con columnas */
+
+.sectionup { /*IMAGEN COCHE*/
+    background: url(/assets/images/audir8.jpeg);
+    max-width: 800px;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+.sectionup p {
+    color: white;
     text-align: center;
 }
 
-ul { /*aqui comienza el contenedor central hecho con columnas */
-    list-style-type: none;
-    padding-left: 0px;
-    max-width: 800px;
-    
-}
-
-.principal img { /*IMAGEN COCHE*/
-    max-width: 800px;
-    position: absolute;
-    max-height: 300px;
-    background-size: cover;
-}
-
-.principal {
-    background-color: white;
-    max-width: 800px;
-    height: 300px;
-    
-}
 .central {
-    background-color: blueviolet;
+    border: solid black 1px;
     max-width: 800px;
     height: 100px;
+    align-items: center;
 }
 
-.izq {
-    float: left;
-    position: relative;
-}
-
-.cent {
-    float: center;
-    position: relative;
+.central p {
+    border: solid;
+    border-width: 0 2px 0px 0;
+    border-style: double;
 }
 
 .der {
     float: right;
-    position: relative;
+    display: flex;
+    max-width: 33%;
+    margin-right: 10px;
+    margin-left: 20px;
+    border: 0 0 0 0 ;
 }
 
+.izq {
+    float: left;
+    display: flex;
+    max-width: 33%;
+    margin-right: 33px;
+    margin-left: 10px;
+}
+
+.cent {
+    align-items: center;
+    display: flex;
+    max-width: 33%;
+    margin:0;
+}
 .bajo {
-    background-color: aquamarine;
-    height: 300px;
+    height: 200px;
 }
 
+.subimg { /*segunda imagen */
+    background: url(/assets/images/ad_personam_02.jpg);
+    background-size: cover;
+    height: 400px;;
+    max-width: 800px;
+    background-position: center;
+}
+.subimg p {
+    color: white;
+}
 
-@media screen  and (max-width: 1400px) {
-        body { background-size: cover;}
-        }
+.lasttex {
+    height: 40%;
+    max-width: 800px;
+    border: solid black 1px;
+}
+
+@media screen and (min-width: 768px) {
+    .containermain { 
+    max-width: 720px; }
+}
+@media screen and (min-width: 1440px) {
+    .containermain { 
+    max-width: 1330px; }
+}
+
