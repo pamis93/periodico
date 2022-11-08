@@ -1,64 +1,77 @@
 
 .containermain {
-    position:  center;
+    display: flex;
+    flex-direction: column;
     margin-left: 350px ;
     margin-right: 350px;
-    width: 1090px ;
 }
 
 .header{
     display: flex;
     text-align: center;
     justify-content: center;
+    width: 80%;
+    border: green 1px solid;
 }
 
-.header p {
+.hola {
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
     border: solid red 1px;
+    width: 20%;
+    font-size: 30px;
+    font-weight: 600;
 }  
 
-.containercenter {
-    display: block;
-    margin-left:30px ;
-    margin-right: 30px;
-    height: 150px;
-    background-color: white;
-    border: solid black 1px;
+.hola p {
+    margin: 0;
 }
 
-.containerleft {
-    display: block;
-    justify-content: left;
+.containercenter {
+    display: flex;
+    height: 150px;
     background-color: white;
-    float: left;
-    margin-left:30px ;
-    height: 800px;
-    max-width: 800px;
     border: solid black 1px;
     
 }
 
-.containerright {
-    display: inline-block;
-    background-color: white;
-    margin-right: 0%;
-    margin-left: 1%;
-    height: 1111px;
-    max-width: 20%;
+.caja {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 80%;
+
+}
+.containerleft {
+    display: block;
+    justify-content: left;
+    background-color: white; 
+    width: 80%;
     border: solid black 1px;
+}
+
+.containerright {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 20%;
+    border: solid black 1px;
+    height: 100%;
+}
+
+.containerright ul {
+    height: 100%;
+    width: 100%;
+    padding: 0;
 }
 
 .containerright li {
     list-style: none;
     border: solid;
     border-width: 0 0px 2px 0px;
-}
-
-.pruebaba {
-    margin-block: auto;
+    padding: 0.5rem 0.2rem;
 }
 
 /*aqui comienza el contenedor central hecho con columnas */
@@ -66,7 +79,7 @@
 .sectionup { /*IMAGEN COCHE*/
     background: url(/assets/images/audir8.jpeg);
     max-width: 800px;
-    height: 500px;
+    height: 30%;
     background-position: center;
     background-size: cover;
 }
@@ -78,7 +91,7 @@
 .central {
     border: solid black 1px;
     max-width: 800px;
-    height: 100px;
+    height: 20%;
     align-items: center;
 }
 
@@ -112,14 +125,14 @@
     margin:0;
 }
 .bajo {
-    height: 200px;
+    height: 30%;
 }
 
 .subimg { /*segunda imagen */
     background: url(/assets/images/ad_personam_02.jpg);
     background-size: cover;
-    height: 400px;;
-    max-width: 800px;
+    height: 100%;
+    /* max-width: 800px; */
     background-position: center;
 }
 .subimg p {
@@ -127,7 +140,7 @@
 }
 
 .lasttex {
-    height: 40%;
+    /* height: 40%; */
     max-width: 800px;
     border: solid black 1px;
 }
